@@ -22,4 +22,23 @@ describe('Teste da Função de Soma', function() {
 
 });
 
+    it('A função deve ser capaz de somar dois números que tenham valor igual a zero', function (){
+    //Coletar produto da Soma
+        const resultadoDaSoma = somarDoisNumeros (0, 0);
+
+    //Comparar com o resultado que você espera
+        expect(resultadoDaSoma).to.equal(0);
+
+        
+    });
+  
+    it ('A função deve ser capaz de somar dois números negativos', function() {
+//coletar o produto da soma, verificando se os dois valores são negativos
+        const resultadoDaSoma = somarDoisNumeros (-12, -20);
+
+//Comparar com o resultado que você espera
+        expect(resultadoDaSoma).to.equal (-32);
+
+    });
+
 
